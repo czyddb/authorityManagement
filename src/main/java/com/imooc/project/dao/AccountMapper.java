@@ -24,5 +24,7 @@ public interface AccountMapper extends BaseMapper<Account> {
      * @return
      */
     IPage<Account> accountPage(Page<Account> page, @Param(Constants.WRAPPER) Wrapper<Account> wrapper);
+
     Account selectAccountById(Long id);
+
 }

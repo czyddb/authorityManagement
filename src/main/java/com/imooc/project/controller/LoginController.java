@@ -19,10 +19,13 @@ import java.util.List;
 @Controller
 @RequestMapping("auth")
 public class LoginController {
+
     @Autowired
     private IAccountService accountService;
+
     @Autowired
     private IResourceService resourceService;
+
     /**
      * 用户登录
      * @param username
@@ -55,7 +58,9 @@ public class LoginController {
      */
     @GetMapping("logout")
     public String logout(HttpSession session){
+        // 销毁 session
         session.invalidate();
         return "redirect:/";
     }
+
 }

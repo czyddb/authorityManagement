@@ -10,6 +10,7 @@ import java.util.List;
  * 自定义Sql注入器
  */
 public class MySqlInjector extends DefaultSqlInjector {
+
     @Override
     public List<AbstractMethod> getMethodList(Class<?> mapperClass) {
         List<AbstractMethod> methodList = super.getMethodList(mapperClass);
@@ -17,4 +18,5 @@ public class MySqlInjector extends DefaultSqlInjector {
         methodList.add(new LogicDeleteByIdWithFill());
         return methodList;
     }
+
 }

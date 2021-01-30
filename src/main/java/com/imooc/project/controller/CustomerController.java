@@ -31,8 +31,10 @@ import java.util.Map;
 @Controller
 @RequestMapping("customer")
 public class CustomerController {
+
     @Autowired
     private ICustomerService customerService;
+
     /**
      * 进入列表页
      * @return
@@ -89,7 +91,6 @@ public class CustomerController {
         return ResultUtil.buildR(success);
     }
 
-
     /**
      * 进入修改页
      * @return
@@ -137,4 +138,5 @@ public class CustomerController {
         model.addAttribute("customer",customer);
         return "customer/customerDetail";
     }
+
 }

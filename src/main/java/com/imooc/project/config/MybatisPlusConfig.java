@@ -24,4 +24,5 @@ public class MybatisPlusConfig {
     public DefaultSqlInjector sqlInjector(){
         return new MySqlInjector();
     }
+
 }

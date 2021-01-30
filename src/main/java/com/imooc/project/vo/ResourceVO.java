@@ -6,7 +6,9 @@ import java.util.List;
 
 @Data
 public class ResourceVO {
+
     private Long resourceId;
+
     private Long parentId;
 
     /**
@@ -35,4 +37,5 @@ public class ResourceVO {
     private Integer sort;
 
     private List<ResourceVO> subs;
+
 }

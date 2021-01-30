@@ -5,3 +5,9 @@ MyBatis-Plus + SpringBoot实现简单权限管理
 2、MyBatis-Plus代码生成器的使用
 3、MyBatis-Plus单表及多表增删改查操作的运用
 4、MyBatis-Plus自动填充的实战应用
+
+
+
+```
+account,customer,resource,role,role_resource
+```

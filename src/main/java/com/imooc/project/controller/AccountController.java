@@ -40,11 +40,13 @@ import java.util.Map;
 @Controller
 @RequestMapping("/account")
 public class AccountController {
+
     @Autowired
     private IAccountService accountService;
-    
+
     @Autowired
     private IRoleService roleService;
+
     /**
      * 进入列表页
      * @return
@@ -192,4 +194,5 @@ public class AccountController {
                 .count();
         return R.ok(count);
     }
+
 }
